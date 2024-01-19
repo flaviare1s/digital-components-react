@@ -1,7 +1,7 @@
 import React from 'react'
 import './BodyComponent.css'
 import { ButtonComponent } from '../ButtonComponent/ButtonComponent'
-import { CTAComponent } from '../HeroComponent/HeroComponent'
+import { HeroComponent } from '../HeroComponent/HeroComponent'
 
 export const BodyComponent = () => {
   return (
@@ -14,7 +14,7 @@ export const BodyComponent = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora maiores veritatis corrupti reiciendis! Molestias doloribus eos exercitationem? Adipisci reiciendis quia libero velit quasi deserunt sed ea, voluptatibus consequuntur culpa molestias!</p>
         <div className='flex justify-between mt-8'>
           <div>
-            <CTAComponent/>
+            <HeroComponent/>
           </div>
           <div className='flex justify-center'>
             <ButtonComponent text={ 'Botão 1' } />
