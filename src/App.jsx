@@ -1,22 +1,18 @@
 import './App.css'
-import { Component1 } from './components/Component1/Component1'
-import { Component2 } from './components/Component2/Component2/'
+import { BodyComponent } from './components/BodyComponent/BodyComponent'
+import { HeaderComponent } from './components/HeaderComponent/HeaderComponent'
 
 export function App() {
 
   return (
-    <>
+    <div>
       <div>
-        <h1>Hello, World!</h1>
-        <h1 className='emoji'>😊</h1>
+        <HeaderComponent/>
       </div>
       <div>
-        <Component1/>
+        <BodyComponent/>
       </div>
-      <div>
-        <Component2/>
-      </div>
-    </>
+    </div>
   )
 }
 

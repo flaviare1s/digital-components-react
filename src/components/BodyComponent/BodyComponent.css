@@ -1,7 +1,7 @@
-.component-2 {
+.body {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.073);
-    border-radius: 10px;
-    margin-top: 10px;
+    width: 70vw;
+    margin: 0px auto;
 }
