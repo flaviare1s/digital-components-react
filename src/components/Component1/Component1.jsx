@@ -1,10 +1,11 @@
 import React from 'react'
+import './Component1.css'
 
 export const Component1 = () => {
   return (
-    <div>
+    <div className='component-1'>
         <h2>Componente 1</h2>
-        <button>Clique aqui!</button>
+        <p>Este é o componente 1</p>
     </div>
   )
 }
