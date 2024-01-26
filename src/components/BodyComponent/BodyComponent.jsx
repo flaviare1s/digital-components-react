@@ -1,9 +1,14 @@
 import React from 'react'
+import { useState } from 'react'
 import './BodyComponent.css'
 import { ButtonComponent } from '../ButtonComponent/ButtonComponent'
 import { HeroComponent } from '../HeroComponent/HeroComponent'
 
 export const BodyComponent = () => {
+  const [estaLogado, setEstaLogado] = useState(false)
+
+  const [contador, setContador] = useState(0)
+
   return (
     <div className='body'>
         <h3>Este é o corpo do site</h3>
@@ -17,8 +22,8 @@ export const BodyComponent = () => {
             <HeroComponent/>
           </div>
           <div className='flex justify-center'>
-            <ButtonComponent text={ 'Botão 1' } />
-            <ButtonComponent text={ 'Botão 2' } />
+            <ButtonComponent text={ estaLogado ? "Logout" : "Login" } onClick={() => setEstaLogado(!estaLogado)} />
+            <ButtonComponent text={ contador } onClick={() => setContador(contador + 1)} />
           </div>
         </div>
     </div>
