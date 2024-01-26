@@ -5,9 +5,21 @@ import { ButtonComponent } from '../ButtonComponent/ButtonComponent'
 import { HeroComponent } from '../HeroComponent/HeroComponent'
 
 export const BodyComponent = () => {
-  const [estaLogado, setEstaLogado] = useState(false)
-
+  const [mudarCor, setmudarCor] = useState(randomHexColor())
   const [contador, setContador] = useState(0)
+
+  function randomHexColor() {
+    var red = Math.floor(Math.random() * 256)
+    var green = Math.floor(Math.random() * 256)
+    var blue = Math.floor(Math.random() * 256)
+  
+    var hexColor = '#' + 
+        red.toString(16).padStart(2, '0') +
+        green.toString(16).padStart(2, '0') +
+        blue.toString(16).padStart(2, '0')
+  
+    return hexColor
+  }
 
   return (
     <div className='body'>
@@ -22,7 +34,7 @@ export const BodyComponent = () => {
             <HeroComponent/>
           </div>
           <div className='flex justify-center'>
-            <ButtonComponent text={ estaLogado ? "Logout" : "Login" } onClick={() => setEstaLogado(!estaLogado)} />
+            <ButtonComponent text={ 'Clique aqui!' } style={{background: mudarCor }} onClick={() => setmudarCor(randomHexColor())} />
             <ButtonComponent text={ contador } onClick={() => setContador(contador + 1)} />
           </div>
         </div>
