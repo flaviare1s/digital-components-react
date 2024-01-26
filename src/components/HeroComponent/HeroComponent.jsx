@@ -1,10 +1,12 @@
 import React from 'react'
+import { ProductList } from '../ProductList/ProductList'
 
 export const HeroComponent = () => {
+ 
   return (
     <div>
-        <h2>Título</h2>
-        <h3>Subtítulo</h3>
+        <h2>Produtos</h2>
+        <ProductList />
         <a href="#">CTA</a>
     </div>
   )
