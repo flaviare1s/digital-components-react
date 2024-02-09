@@ -30,14 +30,16 @@ export const Product = () => {
           <img className='absolute top-0 left-0 w-full object-cover' src={product?.image} alt="Product Image" />
         </div>
         <div>
-          <h1>{product?.name}</h1>
-        </div>
-        <div className='flex justify-between items-center mb-4'>
-          <p>${product?.price}</p>
-          <button>Add to Cart</button>
-        </div>
-        <div>
-        <p>{product?.description}</p>
+          <div>
+            <h1>{product?.name}</h1>
+          </div>
+          <div className='flex justify-between items-center mb-4'>
+            <p>${product?.price}</p>
+            <button>Add to Cart</button>
+          </div>
+          <div>
+          <p>{product?.description}</p>
+          </div>
         </div>
       </div>
     </>
