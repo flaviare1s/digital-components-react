@@ -12,11 +12,11 @@ import { ProductsProvider } from "./providers/products";
 const router = createHashRouter([
   {
     path: "/",
-    element: <div><App/></div>,
+    element: <App/>,
   },
   {
     path: "/product/:id",
-    element: <div><Product/></div>,
+    element: <Product/>,
   },
 ])
 

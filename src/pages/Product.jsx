@@ -1,6 +1,6 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 import { HeaderComponent } from '../components/HeaderComponent/HeaderComponent'
-import { useState, useParams } from 'react'
+import { useParams } from 'react-router-dom'
 
 export const Product = () => {
     const { id: productId } = useParams()
