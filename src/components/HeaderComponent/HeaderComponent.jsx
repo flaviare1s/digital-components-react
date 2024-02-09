@@ -27,7 +27,7 @@ export const HeaderComponent = () => {
   return (
     <div className='header'>
       <div>
-        <img src="react.svg" alt="React Logo" />
+        <img src="/react.svg" alt="React Logo" />
       </div>
         <div>
           <h1>Meu site usando React</h1>
