@@ -2,13 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { App } from './App.jsx'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
 import { Product } from './pages/Product.jsx';
+import { ProductsContext } from './pages/providers/products.jsx';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <div><App/></div>,
@@ -21,6 +22,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ProductsContext.Provider>
+      <RouterProvider router={router} />
+    </ProductsContext.Provider>
   </React.StrictMode>,
 )
