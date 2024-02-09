@@ -25,14 +25,14 @@ export const HeaderComponent = () => {
 
 
   return (
-    <div className='header'>
+    <div className='flex flex-col sm:flex-row justify-around sm:w-screen p-8'>
       <div>
-        <img src="/react.svg" alt="React Logo" />
+        <img src="react.svg" alt="React Logo" />
       </div>
         <div>
           <h1>Meu site usando React</h1>
         </div>
-        <div className='flex justify-center'>
+        <div className='sm:flex justify-center'>
             <ButtonComponent text={ 'Clique aqui!' } style={{background: mudarCor }} onClick={() => setmudarCor(randomHexColor())} />
             <ButtonComponent text={ contador } onClick={() => setContador(contador + 1)} />
         </div>

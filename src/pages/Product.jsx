@@ -25,7 +25,21 @@ export const Product = () => {
   return (
     <>
       <HeaderComponent />
-      <div>Hello product description: {product?.name}</div>
+      <div className='w-full p-4 sm:p-16 sm:grid sm:grid-cols-[30%_60%] sm:gap-gap10'>
+        <div className='relative pb-[100%] overflow-hidden mb-4'>
+          <img className='absolute top-0 left-0 w-full object-cover' src={product?.image} alt="Product Image" />
+        </div>
+        <div>
+          <h1>{product?.name}</h1>
+        </div>
+        <div className='flex justify-between items-center mb-4'>
+          <p>${product?.price}</p>
+          <button>Add to Cart</button>
+        </div>
+        <div>
+        <p>{product?.description}</p>
+        </div>
+      </div>
     </>
   )
 }

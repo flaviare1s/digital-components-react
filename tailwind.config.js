@@ -3,7 +3,13 @@ export default {
   content: [ "./index.html",
   "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        'gap10': '10%',
+        '30': '30%',
+        '60': '60%',
+      },
+    },
   },
   plugins: [],
 }

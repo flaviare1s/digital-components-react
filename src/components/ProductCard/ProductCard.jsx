@@ -8,7 +8,7 @@ export const ProductCard = ({ product, ...rest }) => {
   console.log(products)
 
   return (
-    <a href={`/product/${product.id}`}>
+    <a href={`/#/product/${product.id}`}>
       <div className='product-card' {...rest}> <img src={product.image} alt="" /> {product.name} <br /> R${product.price}</div>
     </a>
   )
